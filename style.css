@@ -4,6 +4,9 @@
 body {
     padding: 0;
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 header {
@@ -12,9 +15,9 @@ header {
     text-align: center;
     color: white;
     background-color: black;
-    padding-top: 1em;
+    padding-top: 2em;
     padding-bottom: 0.5em;
-    font-size: 1em;
+    font-size: 0.6em;
     font-family: 'Major Mono Display', monospace;
 }
 
@@ -32,14 +35,13 @@ a, a:active, a:hover, a:visited {
 
 #menu_icon {
     float: left;
-    margin-top: -3.7em;
-    margin-left: 0.5em;
+    margin-top: -2.5em;
+    margin-left: 0.7em;
 }
 
 .menu-dropdown {
     display: none;
     position: absolute;
-    margin-top: -1.5em;
     background-color: rgb(0, 0, 0);
     padding: 1em 1em 1em 1em;
     line-height: 26pt;
@@ -58,7 +60,6 @@ a, a:active, a:hover, a:visited {
     background-size: cover;
     background-repeat: no-repeat;
     color: white;
-    margin-top: -1.5em;
     padding-top: 4em;
     padding-bottom: 4em;
     padding-left: 1em;
@@ -71,7 +72,6 @@ a, a:active, a:hover, a:visited {
     background-position: cover;
     background-size: cover;
     background-repeat: no-repeat;
-    margin-top: -1.5em;
     padding-top: 4em;
     padding-bottom: 4em;
 }
@@ -81,7 +81,6 @@ a, a:active, a:hover, a:visited {
     background-position: cover;
     background-size: cover;
     background-repeat: no-repeat;
-    margin-top: -1.5em;
     padding-top: 4em;
     padding-bottom: 4em;
 }
@@ -91,7 +90,6 @@ a, a:active, a:hover, a:visited {
     background-position: cover;
     background-size: cover;
     background-repeat: no-repeat;
-    margin-top: -1.5em;
     padding-top: 4em;
     padding-bottom: 4em;
 }
@@ -139,6 +137,7 @@ button {
     font-size: 0.7em;
     transition: all 0.5s ease-out;
     border-style: solid;
+    font-family: 'Major Mono Display', monospace;
 }
 
 footer {
@@ -146,6 +145,7 @@ footer {
     color: white;
     background-color: black;
     font-family: 'VT323', monospace;
+    margin-top: auto;
 }
 
 .container img {
@@ -170,6 +170,7 @@ footer {
         width: 100%;
         font-family: 'VT323', monospace;
         justify-content: space-around;
+        z-index: 1;
     }
 
     nav a {
@@ -243,4 +244,89 @@ footer {
         background-color: rgb(255, 255, 255);
         color: black;
     }
+
+    footer {
+        font-size: 1.5em;
+    }
+}
+
+/* Page 2 - Evolution */
+
+#page2 {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: url(/img/BGevolution1SMALL.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#page2 .text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-family: 'VT323', monospace;
+    font-size: 1em;
+    margin: 2em 2em 2em 2em;
+    background-color: rgba(0, 0, 0, 0.651);
+    border-radius: 1em;
+    padding: 1em;
+}
+
+#page2 article img {
+    max-width: 50%;
+    height: auto;
+    margin-left: 6em;
+    margin-top: 3em;
+    margin-bottom: -4em;
+    border-style: solid;
+    border-width: 0.3em;
+}
+
+#page2 ul {
+    float: left;
+    list-style: none;
+    margin-left: -10em;
+}
+
+@media (min-width: 480px) {
+
+#page2 .flex_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5em;
+}
+
+#page2 .text {
+    margin-right: 0.5em;
+    margin-left: 20em;
+    text-align: center;
+    font-size: 1.5em;
+    background-color: rgba(0, 0, 0, 0.651);
+    border-radius: 1em;
+    padding: 1em;
+}
+
+#page2 article h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+#page2 article img {
+    max-width: 200%;
+    height: auto;
+    margin: auto;
+    border-width: 0.5em;
+}
+
+#page2 ul {
+    margin-left: -45em;
+    text-align: left;
+}
+
 }
