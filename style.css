@@ -186,9 +186,11 @@ footer {
 #page2 {
     padding: 0;
     margin: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
     background-image: url(/img/BGevolution1SMALL.jpg);
     background-size: cover;
     background-position: center;
@@ -228,9 +230,11 @@ article img {
 #page3 {
     padding: 0;
     margin: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
     background-image: url(/img/BGinspirationSMALL.jpg);
     background-size: cover;
     background-position: center;
@@ -260,9 +264,11 @@ article img {
 #page4 {
     padding: 0;
     margin: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
     background-image: url(/img/BGagileSMALL.jpg);
     background-size: cover;
     background-position: center;
