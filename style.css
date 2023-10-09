@@ -25,12 +25,9 @@ nav {
     display: none;
 }
 
-a {
-    text-decoration: none;
-}
-
 a, a:active, a:hover, a:visited {
     color: rgb(255, 255, 255);
+    text-decoration: none;
 }
 
 #menu_icon {
@@ -92,6 +89,27 @@ a, a:active, a:hover, a:visited {
     background-repeat: no-repeat;
     padding-top: 4em;
     padding-bottom: 4em;
+}
+
+#contact {
+    background-image: linear-gradient(rgb(0, 0, 0), rgba(255, 255, 255, 0), rgb(0, 0, 0)),url(/img/BG5.jpg);
+    padding-top: 7em;
+    padding-bottom: 7em;
+    background-size: cover;
+    padding-left: 3em;
+    padding-right: 3em;
+}
+
+form {
+    text-align: center;
+    font-family: 'VT323', monospace;
+    font-size: 1em;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.651);
+    border-radius: 1em;
+    width: 90%;
+    margin: auto;
+    padding: 1em 0em 1em 0em;
 }
 
 .container {
@@ -158,7 +176,105 @@ footer {
     height: auto;
 }
 
-@media (min-width: 480px) {
+
+
+/* Page 2 - Evolution */
+
+#page2 {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: url(/img/BGevolution1SMALL.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-family: 'VT323', monospace;
+    font-size: 1em;
+    margin: 2em 2em 2em 2em;
+    background-color: rgba(0, 0, 0, 0.651);
+    border-radius: 1em;
+    padding: 1em;
+}
+
+article img {
+    max-width: 50%;
+    height: auto;
+    margin-left: 6em;
+    margin-top: 3em;
+    margin-bottom: -4em;
+    border-style: solid;
+    border-width: 0.3em;
+}
+
+#page2 ul {
+    float: left;
+    list-style: none;
+    margin-left: -10em;
+}
+
+/* Page 3 - Larry Page & Sergey Brin */
+
+#page3 {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: url(/img/BGinspirationSMALL.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#mobilevideo {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.651);
+    border-radius: 1em;
+    color: white;
+    font-family: 'VT323', monospace;
+    font-size: 1em;
+}
+
+#desktopvideo {
+    display: none;
+}
+
+#page3 ul {
+    float: left;
+    list-style: none;
+    margin-left: -17em;
+}
+
+/* Page 4 - Agile Developement */
+
+#page4 {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: url(/img/BGagileSMALL.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#page4 ul {
+    margin-left: -15em;
+    text-align: left;
+    list-style: none;
+}
+
+@media (min-width: 480px) { /* Desktop media queries */
     #menu_icon {
         display: none;
     }
@@ -171,6 +287,8 @@ footer {
         font-family: 'VT323', monospace;
         justify-content: space-around;
         z-index: 1;
+        position: sticky;
+        top: 0;
     }
 
     nav a {
@@ -240,93 +358,105 @@ footer {
         font-size: 2em;
     }
 
+    #contact {
+        background-image: linear-gradient(rgb(0, 0, 0), rgba(255, 255, 255, 0), rgb(0, 0, 0)),url(/img/BG5.jpg);
+        padding-top: 7em;
+        padding-bottom: 7em;
+        background-size: cover;
+        padding-left: 3em;
+        padding-right: 3em;
+    }
+
     button:hover {
         background-color: rgb(255, 255, 255);
         color: black;
     }
 
+    form {
+        font-size: 2em;
+        width: 50%;
+    }
+
     footer {
         font-size: 1.5em;
     }
-}
+    
+    #page2 {
+        background-image: url(/img/BGevolution1.jpg);
+    }
+    
+    #page3 {
+        background-image: url(/img/BGinspiration.jpg)!important;
+    }
+    
+    #page4 {
+        background-image: url(/img/BGagile.jpg)!important;
+    }
 
-/* Page 2 - Evolution */
+    .flex_container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 5em;
+    }
+    
+    .text {
+        margin-right: 0.5em;
+        margin-left: 20em;
+        font-size: 1.5em;
+        background-color: rgba(0, 0, 0, 0.651);
+        border-radius: 1em;
+        padding: 1em;
+        width: 70%;
+    }
+    
+    article h1 {
+        font-size: 1.5em;
+        margin: 0;
+    }
+    
+    article img {
+        max-width: 120%;
+        height: auto;
+        margin: auto;
+        margin-left: 6em;
+        border-width: 0.5em;
+    }
+    
+    #page2 ul {
+        margin-left: -29em;
+    }
 
-#page2 {
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    background-image: url(/img/BGevolution1SMALL.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
+    #page3 ul {
+        margin-left: -42em;
+    }
+    
+    #page4 ul {
+        margin-left: -39em;
+    }
 
-#page2 .text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: white;
-    font-family: 'VT323', monospace;
-    font-size: 1em;
-    margin: 2em 2em 2em 2em;
-    background-color: rgba(0, 0, 0, 0.651);
-    border-radius: 1em;
-    padding: 1em;
-}
-
-#page2 article img {
-    max-width: 50%;
-    height: auto;
-    margin-left: 6em;
-    margin-top: 3em;
-    margin-bottom: -4em;
-    border-style: solid;
-    border-width: 0.3em;
-}
-
-#page2 ul {
-    float: left;
-    list-style: none;
-    margin-left: -10em;
-}
-
-@media (min-width: 480px) {
-
-#page2 .flex_container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 5em;
-}
-
-#page2 .text {
-    margin-right: 0.5em;
-    margin-left: 20em;
-    text-align: center;
-    font-size: 1.5em;
-    background-color: rgba(0, 0, 0, 0.651);
-    border-radius: 1em;
-    padding: 1em;
-}
-
-#page2 article h1 {
-    font-size: 2.5em;
-    margin: 0;
-}
-
-#page2 article img {
-    max-width: 200%;
-    height: auto;
-    margin: auto;
-    border-width: 0.5em;
-}
-
-#page2 ul {
-    margin-left: -45em;
-    text-align: left;
-}
+    #googlefounders {
+        max-width: 30%;
+        height: auto;
+    }
+    
+    #mobilevideo {
+        display: none;
+    }
+    
+    #desktopvideo {
+        display: block!important;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.651);
+        border-radius: 1em;
+        color: white;
+        font-family: 'VT323', monospace;
+        font-size: 1.5em;
+        width: 30%;
+        height: auto;
+        margin: auto;
+        margin-bottom: 2em;
+        margin-top: -3em; 
+    }
 
 }

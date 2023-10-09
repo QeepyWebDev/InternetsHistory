@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>History of the Internet - Home</title>
     <link rel="stylesheet" href="style.css">
   </head>
@@ -67,6 +66,23 @@
                   <button onclick="window.location.href='agiledev.html'">Learn More</button>
                 </div>
             </div>
+        </section>
+
+        <section id="contact">
+            <form>
+                <p>Send me a message!</p>
+                <label for="fname">First name</label><br>
+                <input type="text" id="fname" name="fname" value="Your Name"><br>
+                <label for="lname">Last name</label><br>
+                <input type="text" id="lname" name="lname" value="Your Last Name"><br>
+                <label for="email">Email</label><br>
+                <input type="email" id="email" name="email" value="Your Email"><br>
+                <label for="message">Message:</label><br>
+                <textarea name="message" rows="10" cols="30">Say hello or ask me a question!</textarea><br>
+                <button type="button">Submit</button><br><br>
+                <p>Would you like to download a surprise PDF file?</p>
+                <button type="submit" onclick="window.open('/files/download.pdf')">Download!</button>
+            </form>
         </section>
     </main>
     <footer>Kleopatra Kairaityte 2023</footer>
