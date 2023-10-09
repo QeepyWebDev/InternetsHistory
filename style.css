@@ -217,9 +217,8 @@ article img {
 }
 
 #page2 ul {
-    float: left;
     list-style: none;
-    margin-left: -10em;
+    margin-left: -5em;
 }
 
 /* Page 3 - Larry Page & Sergey Brin */
@@ -250,9 +249,8 @@ article img {
 }
 
 #page3 ul {
-    float: left;
     list-style: none;
-    margin-left: -17em;
+    margin-left: -14em;
 }
 
 /* Page 4 - Agile Developement */
@@ -270,8 +268,7 @@ article img {
 }
 
 #page4 ul {
-    margin-left: -15em;
-    text-align: left;
+    margin-left: -10em;
     list-style: none;
 }
 
