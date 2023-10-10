@@ -6,14 +6,13 @@ body {
     margin: 0;
     display: flex;
     flex-direction: column;
-    width: 100%;
+    max-width: 100vw;
     height: 100%;
     overflow-x: hidden;
 }
 
 header {
     margin-top: -1.35em;
-    max-width: 100vw;
     text-align: center;
     color: white;
     background-color: black;
@@ -186,7 +185,7 @@ footer {
 #page2 {
     padding: 0;
     margin: 0;
-    width: 100%;
+    max-width: 100vw;
     height: 100%;
     overflow-x: hidden;
     display: flex;
@@ -230,7 +229,7 @@ article img {
 #page3 {
     padding: 0;
     margin: 0;
-    width: 100%;
+    max-width: 100vw;
     height: 100%;
     overflow-x: hidden;
     display: flex;
@@ -264,7 +263,7 @@ article img {
 #page4 {
     padding: 0;
     margin: 0;
-    width: 100%;
+    max-width: 100vw;
     height: 100%;
     overflow-x: hidden;
     display: flex;
